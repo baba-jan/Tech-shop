@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 body {
-    background-color: #121212;
+    background-color: #1c1c1c;
     color:lightsteelblue;
 }
 header{
@@ -171,7 +171,7 @@ header nav ul li a{
         /* top products start*/
 .top-products {
     padding: 40px;
-    background-color: #121212;
+    background-color:#1c1c1c;
     margin: 40px;
 }
 .product-filters {
@@ -180,7 +180,7 @@ header nav ul li a{
     margin-bottom: 20px;
 }
 .product-filters button {
-    background-color:#121212;
+    background-color:#1c1c1c;
     color: #ffffff;
     padding: 10px 20px;
     margin: 0 60px;
@@ -283,7 +283,8 @@ header nav ul li a{
 .bottom{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-
+    background-color: black;
+    padding: 20px;
 }
 .bottom0 p{
     opacity: 0.8;
@@ -324,9 +325,22 @@ header nav ul li a{
     margin-left: 90px;
     line-height: 1cm;
 }
+.bottom1 p,.bottom2 p,.bottom3 p{
+    opacity: 0.6;
+}
 /* footer ended*/
+.end{
+    background-color: black;
+}
 .social-icons{
     display: flex;
-    justify-content:right;
-    padding: 10px 20px;
+    justify-content:end;
+    
 }
+.line{
+    opacity: 0.6;
+}
+.last{
+padding-top: 40px;
+}
+  

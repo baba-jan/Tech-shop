@@ -9,7 +9,7 @@
     font-family: Arial, sans-serif;
 }
 body {
-    background-color: #121212;
+    background-color:#1c1c1c;
     color:lightsteelblue;
 }
 header{
@@ -46,7 +46,7 @@ header nav ul li a{
     height: 470px;
     width: 550px;
     text-align: center;
-    background-color:#15181d00;
+    background-color:#1c1c1c;
     margin-left: 15%;
     overflow-y:scroll;
     margin-top: 10px;
@@ -92,7 +92,7 @@ header nav ul li a{
     grid-template-columns: repeat(2,1fr);
     width: 20%;
     height: 20%;
-    background-color:  #141410;
+    background-color:#1c1c1c;
     line-height: 1;
 
 }
@@ -163,7 +163,8 @@ header nav ul li a{
 .bottom{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-
+    background-color: black;
+    padding: 20px;
 }
 .bottom0 p{
     opacity: 0.8;
@@ -204,11 +205,23 @@ header nav ul li a{
     margin-left: 90px;
     line-height: 1cm;
 }
+.bottom1 p,.bottom2 p,.bottom3 p{
+    opacity: 0.6;
+}
 /* footer ended*/
+.end{
+    background-color: black;
+}
 .social-icons{
     display: flex;
     justify-content:right;
     padding: 10px 20px;
+}
+.line{
+    opacity: 0.6;
+}
+.last{
+padding-top: 40px;
 }
         </style>
     </head>
@@ -384,7 +397,8 @@ header nav ul li a{
   </footer>  
 
 <footer>
-<section>
+    <section class="end">
+        <hr class="line" width="100%" size="1">
   <div class="last">
       <p>2024 | All Rights Reserved.Built by | Bogavalli Babajan</p>
     </div>
