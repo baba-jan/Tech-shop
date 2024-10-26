@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <style>
-          * {
-    margin: 0;
-    padding: 0;
+        <style>
+    *{
+    margin: 1px;
+    padding: 1px;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    align-items:left;
 }
-
 body {
-    background-color: #282828;
-    color: #fff;
+    background-color: #121212;
+    color:lightsteelblue;
 }
 header{
     display: flex;
     /* background-color: black; */
     background-color: #1c1c1c;
-    padding: 20px 20px;
+    padding: 10px 20px;
     justify-content: space-between;
     align-items: center;
 }
@@ -44,77 +42,112 @@ header nav ul li a{
     color: #ffffff;
 
 }
-.cart-container {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 40px;
-    background-color:rgba(128, 128, 128, 0.059);
-    border-radius: 10px;
-    margin-left:30px;
+.slider-container{
+    height: 470px;
+    width: 550px;
+    text-align: center;
+    background-color:#15181d00;
+    margin-left: 15%;
+    overflow-y:scroll;
+    margin-top: 10px;
    
 }
-
-.cart-item {
+.slider-item{
+    height: 200px;
+    width: 200px;
     display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    
+}
+.slider-img img{
+    width: 100px;
+    height: 100px;
+    margin-top: 15px;
+
+}
+.slider-heading{
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    left: 10px;
+    top: 15px;
+    text-align: start;
+}
+
+.slider-heading i{
     align-items: center;
-    justify-content: space-between;
-    padding: 15px 0;
-    border-bottom: 1px solid #3d3d3d;
-    line-height: 1.6;
+    justify-content:end;
+}
+.slider-content{
+    display: grid;
+
+    
+}
+.par h3{
+    text-align: start;
+}
+.cart-information{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 20%;
+    height: 20%;
+    background-color:  #141410;
+    line-height: 1;
+
+}
+.order-summary{
+    width: 300px;
+    height: 400px;
+    margin-left: 100%;
+    margin-top: 20px;
 }
 
-.product-image {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-}
+.order-summary  .sp1{
+    position: relative;
+    left: 30%;
+    font-weight: 100px;
 
-.product-details {
-    flex-grow: 1;
-    margin-left: 20px;
 }
+.order-summary  .sp2{
+    position: relative;
+    left: 30%;
+   
 
-.product-details h3 {
-    font-size: 1.1rem;
-    margin-bottom: 5px;
 }
-
-.price {
-    font-size: 1rem;
-    color: lightsteelblue;
+.order-summary  .sp3{
+    position: relative;
+    left: 30%;
+   
 }
-.price span{
-    font-size: 20px;
+.order-summary .sp4{
+    position: relative;
+    left: 23%;
 }
-.price s{
-    color: #888;
+.order-summary .h2{
+    line-height: 2;
 }
-.price strike {
-    color: #888;
-    font-size: 0.9rem;
-}
-.counter {
-            display: inline-flex;
+.quantity-selector{
+    display: inline-flex;
             align-items: center;
             border: 2px solid #444;
             background-color: #333;
             color: #fff;
-            border-radius: 5px;
-        }
-
-        .counter button {
-            background-color: #444;
+            width: 90px;
+            height: 30px;
+}
+.quantity-selector button{
+    background-color: #444;
             color: #fff;
             border: none;
-            width: 30px;
+            width: 80px;
             height: 30px;
             font-size: 18px;
             cursor: pointer;
             outline: none;
-            
-        }
-        .counter input {
-            width: 30px;
+}
+.quantity-selector input{
+           width: 30px;
             height: 30px;
             border: none;
             text-align: center;
@@ -122,147 +155,274 @@ header nav ul li a{
             color: red;
             font-size: 20px;
             outline: none;
-        }
-.delete-btn{
- background-color:rgba(128, 128, 128, 0.059);
-color:white;
- font-size: 25px;
+}
+/* footer start*/
+.footer{
+    margin-top: 20px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+}
+.bottom0 p{
+    opacity: 0.8;
+}
+.bottom0,.p,.input-field{
+    line-height: 1.5;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: white; 
 }
 
-.summary{
-    max-width: 300px;
-    margin: 50px auto;
-    padding: 40px;
-    background-color:rgba(128, 128, 128, 0.059);
-    border-radius: 10px;
-  
+.subscribe button{
+    background-color: #e60023;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-right:80%;
+    font-size: 20px;
 }
-        .summary h2 {
-            font-size: 1.5rem;
-        }
-        .summary div {
-            margin: 10px 0;
-        }
-        .checout-btn {
-            background-color: #ff4545;
-            color: white;
-            padding: 15px;
-            text-align: center;
-            display: block;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 1.2rem;
-            margin-top: 20px;
-        }
-
-
-      </style>  
+.bottom1{
+    margin-left: 90px;
+    line-height: 1cm;
+    
+}
+.bottom2{
+    margin-left: 90px;
+    line-height: 1cm;
+}
+.bottom3{
+    margin-left: 90px;
+    line-height: 1cm;
+}
+/* footer ended*/
+.social-icons{
+    display: flex;
+    justify-content:right;
+    padding: 10px 20px;
+}
+        </style>
     </head>
     <body>
-        <header>
-                <div>
-                    <h4>Tech-Shop</h4>
-                </div>
-        
-                <nav>
-                    <ul>
-                        <li class="icon">
-                            <a href="" class="ficon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="icon">
-                            <a href="" class="sicon"> 
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="icon">
-                            <a href="signup.html" class="ticon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
+        <header> 
+            <div>
+                <h4>Tech-Shop</h4>
+            </div>
+    
+            <nav>
+                <ul>
+                    <li class="icon">
+                        <a href="" class="ficon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="" class="sicon"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="signup.html" class="ticon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
-        <section>
-        <div class="cart-container">
-            <div class="cart-item">
-                <img src="./Earpods/jbl660nc-1.png" alt="JBL Live 660NC" class="product-image">
-                <div class="product-details">
-                    <h4>JBL Live 660NC Wireless Over-Ear NC Headphones</h4>
-                    <p class="price"><span>₹9,999</span> &nbsp;&nbsp;<s class="s">₹14,999</s></p>
-                    <div class="counter">
-                        <button onclick="decrease()">-</button>
-                        <input type="text" id="number" value="1" readonly>
-                        <button onclick="increase()">+</button>
-                    </div>
-                
-                    <script>
-                        function increase() {
-                            let number = document.getElementById("number").value;
-                            document.getElementById("number").value = parseInt(number) + 1;
-                        }
-                
-                        function decrease() {
-                            let number = document.getElementById("number").value;
-                            if (number > 1) {
-                                document.getElementById("number").value = parseInt(number) - 1;
-                            }
-                        }
-                    </script>
-                
-                </div>
-                <button class="delete-btn">🗑</button>
-           
-            </div>
-            <div class="cart-item">
-                <img src="./Earpods/boat518-1.png" alt="boAt Rockerz 518" class="product-image">
-                <div class="product-details">
-                    <h4>boAt Rockerz 518 On-Ear Wireless <br>Headphones</h4>
-                    <p class="price"><span>₹1,299</span>&nbsp;&nbsp; <s>₹3,990</s></p>
-                    <div class="counter">
-                        <button onclick="decrease()">-</button>
-                        <input type="text" id="number" value="1" readonly>
-                        <button onclick="increase()">+</button>
-                    </div>
-                
-                    <script>
-                        function increase() {
-                            let number = document.getElementById("number").value;
-                            document.getElementById("number").value = parseInt(number) + 1;
-                        }
-                
-                        function decrease() {
-                            let number = document.getElementById("number").value;
-                            if (number > 1) {
-                                document.getElementById("number").value = parseInt(number) - 1;
-                            }
-                        }
-                    </script>
-                
-                </div>
-                <button class="delete-btn">🗑</button>
-            </div>
+    </header>
+    <div class="cart-information">
+    <div class="slider-container">
+        <div class="slider-item">
+        <div class="slider-img">
+        <img src="./Earpods/jbl660nc-1.png" alt="">
         </div>
-    </section>
+        <div class="slider-content">
+        <div class="slider-heading">
+        <p style="color:  lightsteelblue">JBL LIVE 660NC Wireless Over-ear NC<br> headphones  </p> <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i style="color:  #AEB0B6; " class="fa-regular fa-trash-can"></i>
+        </div> 
+    <div class="par">
+        <h3 style="color: #B5B7C0; font-size: 25px;">₹9,999 &nbsp;<s style="color: grey;font-size: 20px;">₹14,999</s></h3 ><br>
+    </div>
+    <div class="quantity-selector"  >
+        <button class="qty-btn minus" style="width: 30px;">-</button>
+        <span class="quantity" style="color: red;">1</span>
+        <button class="qty-btn plus"style="width: 30px;">+</button>
+    </div>
+</div>
+    </div> <br>
+    <hr width="90%" size="1">
+    <div class="slider-item">
+        <div class="slider-img">
+        <img src="./Earpods/boat518-1.png" alt="">
+    </div>
+    <div class="slider-content">
+    <div class="slider-heading">
+        <p style="color:  lightsteelblue">boAt Rockerz 518 On Ear Wireless <br>headphoness </p><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <i style="color:  #AEB0B6;" class="fa-regular fa-trash-can"></i>
+        </div>
+        <div class="par">
+        <h3 style="color: #B5B7C0;font-size: 25px;" >₹1,299 &nbsp; <s style="color: grey;font-size: 20px;">₹3,990</s></h3><br>
+    </div> 
+    <div class="quantity-selector"  >
+        <button onclick="decrease()">-</button>
+        <input type="text" id="number" value="1" readonly>
+        <button onclick="increase()">+</button>
+  </div>
+  <script>
+    function increase() {
+        let number = document.getElementById("number").value;
+        document.getElementById("number").value = parseInt(number) + 1;
+    }
 
-            <section class="summary">
-                <div>
-                    <h2>Order Summary</h2>
-                    <div>Original Price: ₹22,978</div>
-                    <div>Discount: -₹10,132</div>
-                    <div>Delivery: Free</div>
-                    <div style="font-size: 1.5rem; margin-top: 10px;">Total Price: ₹12,846</div>
-                    <a href="#" class="checkout-btn">Checkout</a>
-                </div>
-            </section>
-        
-        
+    function decrease() {
+        let number = document.getElementById("number").value;
+        if (number > 1) {
+            document.getElementById("number").value = parseInt(number) - 1;
+        }
+    }
+</script>
+
+</div>
+    </div><br>
+    <hr width="90%" size="1">
+    
+    <div class="slider-item">
+        <div class="slider-img">
+        <img src="./Earpods/boat131-1.png" alt="">
+    </div>
+    <div class="slider-content">
+    <div class="slider-heading">
+        <p style="color: lightsteelblue">boAt Airdopes 131 Wireless in Ear Earbuds </h3><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <i style="color:  #AEB0B6;" class="fa-regular fa-trash-can"></i>
+    </div>
+    
+    <div class="par">
+        <h3 style="color: #B5B7C0;font-size: 20px;">₹1,099 &nbsp; <s style="color: grey;font-size: 20px;">₹2,990</s></h3><br>
+    </div>
+    <div class="quantity-selector"  >
+        <button class="qty-btn minus" style="width: 30px;">-</button>
+        <span class="quantity" style="color: red;">1</span>
+        <button class="qty-btn plus"style="width: 30px;">+</button>
+    </div>
+</div>
+    </div><br>
+    <hr width="90%" size="1">
+    <div class="slider-item">
+        <div class="slider-img">
+        <img src="./Earpods/boat110-1.png" alt="">
+    </div>
+    <div class="slider-content">
+    <div class="slider-heading">
+       <p style="color:  lightsteelblue;">boAt Bassheads 110 In Ear Wired Earphones</p>
+        <i style="color:  #AEB0B6;" class="fa-regular fa-trash-can"></i>
+    </div>
+    
+    <div class="par">
+        <h3 style="color: #B5B7C0;font-size: 25px;">₹499 &nbsp; <s style="color: grey;font-size: 20px;">₹999</s></h3><br>
+    </div>
+    <div class="quantity-selector" >
+        <button class="qty-btn minus" style="width: 30px;">-</button>
+        <span class="quantity" style="color: red;">1</span>
+        <button class="qty-btn plus"style="width: 30px;">+</button>
+    </div>
+    </div>
+</div>
+    </div>
+    <div class="order-summary">
+        <h3 style="color:   lightsteelblue">Order Summary (4 items)</h3><br><br>
+        <p style="color:  lightsteelblue ">Original Price  <span class="sp1" style="text-align: end;">₹22,978</span></p><br><br>
+        <p style="color: lightsteelblue">Discount &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <span class="sp2" style="color: green;text-align: end;">-₹10,132</span></p><br><br>
+
+        <p style="color:  lightsteelblue">Delivery &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span class="sp3" style="color: green;"> Free </span></p><br><br>
+        <hr width="80%" size="1">
+        <h4 style="color: lightsteelblue" font-size: 25px;>Total Price &nbsp;&nbsp;&nbsp;&nbsp;<span class="sp4" style="text-align: end;">₹12,846</span> </h4><br><br>
+        <button style="width: 250px;height: 40px;color: white; background-color: red;font-size: large;">Checkout</button>
+
+    </div>
+    </div>
+    <footer>
+        <section class="bottom">
+            <div class="bottom0">
+                <h2>Tech-Shop</h2>
+                <p>Subscribe to our Email alerts to receive early discount offers,and new products info.</p>
+                <form>
+                    <input type="text" placeholder="Email Address*"  class="input-field">
+                </form>
+                <form class="subscribe">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+            <div class="bottom1">
+               <h3>Help</h3>
+               <p>FAQs<br>Track order<br>Cancel order<br>Return order<br>Warranty Info</p>
+            </div>
+            <div class="bottom2">
+                <h3>Policies</h3>
+                <p>Return Policy<br>Security<br>Sitemap<br>Privacy Policy<br>Terms & Conditions</p>
+             </div>
+             <div class="bottom3">
+                <h3>Company</h3>
+                <p>About Us<br>Contact Us<br>Service Centers<br>Careers<br>Affiliates</p>
+             </div>
+        </section>
+  </footer>  
+
+<footer>
+<section>
+  <div class="last">
+      <p>2024 | All Rights Reserved.Built by | Bogavalli Babajan</p>
+    </div>
+      <div class="social-icons">
+  <div class="facebook">
+    <a href=""></a>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
+  <i class="fa fa-facebook"  style="font-size:30px"></i>
+ </div>
+  <div class="twitter">
+    <i class="fa fa-twitter"  style="font-size:30px"></i>
+   <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" viewBox="0 0 16 16"></svg>
+
+    <path d="M5.026 15c6.038 0 9.341-5.003 
+    9.341-9.334 0-.14 0-.282-.006-.422A6.685 
+    6.685 0 0 0 16 3.542a6.658 6.658 0 0 
+    1-1.889.518 3.301 3.301 0 0 0 1.447-1.817
+    6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 
+    0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 
+    3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 
+    0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 
+    2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 
+    3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 
+    2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 
+    0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+</svg>
+</div>
+  <div class="instagram">
+  <a href=""></a>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <i class="fa fa-instagram"  style="font-size:30px"></i>
+  </div>
+  <div class="linkedin">
+  <a href="" style="color: lightsteelblue;"><i class="fa fa-linkedin" style="font-size:30px"></i></a>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </div>
+</div>
+</section>
+</footer>
     </body>
 </html>
