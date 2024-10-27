@@ -330,17 +330,20 @@ header nav ul li a{
 }
 /* footer ended*/
 .end{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
     background-color: black;
 }
 .social-icons{
+    margin: 10px 70px 0px 30px;
     display: flex;
-    justify-content:end;
-    
 }
 .line{
     opacity: 0.6;
 }
 .last{
-padding-top: 40px;
+margin-top: 25px;
+font-size: 14px;
 }
   

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           *{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #1c1c1c;
+    color:lightsteelblue;
+}
+header{
+    display: flex;
+    /* background-color: black; */
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+header div h4{
+    flex: 1;
+    font-size: 24px;
+    color: #ffffff;
+}
+header nav{
+    flex: 1;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;    
+}
+header nav ul li{
+    list-style: none;
+    padding: 10px; 
+
+
+}
+header nav ul li a{
+    color: #ffffff;
+
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 500px;
+}
+.product-angles{
+    display: inline-block;
+}
+.product-angles img{
+    border: 1px solid rgba(169, 169, 169, 0.945);
+    width: 90px;
+    height: 90px;
+    padding: 10px;
+    margin-top: 10px;
+}
+.product-angles img:hover{
+    border:1px solid  white;
+}
+.product-image{
+    position: relative;
+    right: 45%;
+}
+.offers-discounts{
+    display: flex;
+}
+.button-icon{
+    align-items: end;
+}
+.specifications{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 700px;
+    justify-content: space-evenly;
+    color: #9EA8B6;
+   
+}
+.specifications ul h5,h5:hover{
+    background-color: red;
+    width: 120px;
+    height: 30px;
+    color: white;
+}
+.specifications ul{
+    color: #9CAAC3;
+    font-size: large;
+}
+.specifications h5{
+    font-size: large;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <header> 
+            <div>
+                <h4>Tech-Shop</h4>
+            </div>
+    
+            <nav>
+                <ul>
+                    <li class="icon">
+                        <a href="" class="ficon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="cart.html" class="sicon"> 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="icon">
+                        <a href="signup.html" class="ticon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div>
+                <div class="product-container">
+                    <div class="product-angles">
+                    <img src="./Earpods/jbl660nc-1.png" alt="" ><br>
+                    <img src="./Earpods/jbl660nc-2.png" alt=""><br>
+                    <img src="./Earpods/jbl660nc-3.png" alt=""><br>
+                    <img src="./Earpods/jbl660nc-4.png" alt=""><br>
+                </div>
+                <div class="product-image">
+                    <img src="./Earpods/jbl660nc-1.png" alt="" style="width: 450px; height: 450px; ">
+                </div>
+                <div class="product-information">
+                    <h3>JBL LIVE 660NC</h3><br>
+                    <p>Wireless Over-ear NC headphones</p>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>&nbsp;|&nbsp;1234 Ratings<br>
+                    <hr width="100%" size="1" style="margin-top: 20px;" >
+                    <p style=" margin-top: 20px; "><b style="font-size: 30px;">₹9,999</b> <s>₹14,999</s></p><br>
+                    <button class="button-icon" style="margin-left: 55%; color: white; background-color: green; width: 80px; height: 30px;"> &nbsp;In stock</button>
+                    <p style="color: green;">You save: ₹5,000(33%)</p><br>
+                    <p style="color: grey; line-height:0.1;">(Inclusive of all taxes) </p>
+                    <hr width="100%" size="1" style="margin-top: 20px;" >
+                    <h3 style="margin-top: 20px;">Offers and Discounts</h3>
+                    <div class="offers-discounts" style="margin-top: 20px;"><br>
+                    <p style="border: 1px solid grey; width: 50%;" style="margin-top: 20px;">No cost EMI on Credit<br>Card</p><br>
+                    <p style="border: 1px solid grey; width: 50%;" style="margin-top: 20px;">Pay Later & Avail Cashback</p><br>
+                    </div>
+                    <hr width="100%" size="1" style="margin-top: 20px;">
+                    <button style="background-color: red; color: white; margin-top: 20px; width: 200px; height: 50px;border-radius: 5px;">Add to cart</button>
+            
+               </div>
+            </div>
+        </section>
+        <section>
+            <section>
+                <div class="specifications">
+                    <ul style="margin-top: 70px; margin-left: 5px;">
+                       <p>Brand<br>hgs<br></p>
+                    </ul>
+                    
+                    <ul style="list-style: none; text-align: end; margin-right: 62%;">
+                        <h5 style="color: #595A63;" >Specifications</h5><br><br>
+                        <li>JBL</li><br><br>
+                        <li>JBL Live 660NC</li><br><br>
+                        <li>Headphones</li><br><br>
+                        <li>Over Ear</li><br><br>
+                        <li>Wireless</li><br><br>
+                        <li>Yes</li><br><br>
+                    </ul>
+                    <h5>Overview</h5>
+                    <h5>Reviews</h5>
+                </div>
+                
+                
+            </section>
+    </body>
+</html>
