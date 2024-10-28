@@ -7,7 +7,47 @@
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <style>
-        .box-img1{
+        *{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #1c1c1c;
+    color:lightsteelblue;
+}
+header{
+    display: flex;
+    /* background-color: black; */
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+header div h4{
+    flex: 1;
+    font-size: 24px;
+    color: #ffffff;
+}
+header nav{
+    flex: 1;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;    
+}
+header nav ul li{
+    list-style: none;
+    padding: 10px; 
+
+
+}
+header nav ul li a{
+    color: #ffffff;
+
+}
+  .box-img1{
     padding: 10px;
     color: white;
     border: 1px solid grey;
@@ -111,21 +151,110 @@
     align-items: center;
 
 }
+.footer{
+    margin-top: 20px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: black;
+    padding: 20px;
+}
+.bottom0 p{
+    opacity: 0.8;
+}
+.bottom0,.p,.input-field{
+    line-height: 1.5;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: white; 
+}
+
+.subscribe button{
+    background-color: #e60023;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-right:80%;
+    font-size: 20px;
+}
+.bottom1{
+    margin-left: 90px;
+    line-height: 1cm;
+    
+}
+.bottom2{
+    margin-left: 90px;
+    line-height: 1cm;
+}
+.bottom3{
+    margin-left: 90px;
+    line-height: 1cm;
+}
+.bottom1 p,.bottom2 p,.bottom3 p{
+    opacity: 0.6;
+}
+/* footer ended*/
+.end{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+    background-color: black;
+}
+.social-icons{
+    margin: 10px 70px 0px 30px;
+    display: flex;
+}
+.line{
+    opacity: 0.6;
+}
+.last{
+margin-top: 25px;
+font-size: 14px;
+}
+  
     </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-        <div class="logo">
-            <a href="index.html">Tech-Shop</a>
+    <header> 
+        <div>
+            <h4>Tech-Shop</h4>
         </div>
-        <div class="icons">
-            <img src="search-icon.png" alt="">
-            <img src="cart.png" alt="">
-            <img src="user-icon.png" alt="">
-        </div>
-    </div>
-    </header>
+
+        <nav>
+            <ul>
+                <li class="icon">
+                    <a href="" class="ficon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="cart.html" class="sicon"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="signup.html" class="ticon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+            </header>
     <div class="product-container">
         <div class="product-angles">
         <img src="jbl660nc-1.png" alt="" ><br>
@@ -247,74 +376,75 @@
     </div>
 </div>
 </div>
-
-<section>
-    <h2>Our Advantages</h2>
-    <div class="advantages">
-    
-        <i class="fa-solid fa-truck-fast"></i>
-        <h4>Express Delivery</h4>
-        <p>Ships in 24 hours</p>
-        <i class="fa-solid fa-shield-halved"></i>
-        <h4>Brand Warranty</h4><br>
-        <p>100% original products</p>
-        <i class="fa-solid fa-tags"></i>
-        <h4>Exciting deals</h4><br>
-        <p>On all prepaid orders</p>
-        <i class="fa-solid fa-credit-card"></i>
-        <h4>Secure Payments</h4><br>
-        <p>SSL/Secure certificates</p>
-    </div>
-</section>
-</body>
 <footer>
-    <div class="footer-sec">
-        <div class="1st-sec">
-        <h3 style="color: 
-        #A9B0C4">Tech Shop</h3><br><br>
-        <p>Subscribe to our Email alerts to receive <br>early discount offers,and new products info</p><br>
-        <input type="email" name="" placeholder="Email Address*" style="width: 180px; border:2px solid #595A63;height: 30px;  color: #595A63 ; background-color: black"><br><br>
-        <button style="background-color: red;width: 110px; height: 40px; color: white;">Subscribe</button><br>
-    </div>
+    <section class="bottom">
+        <div class="bottom0">
+            <h2>Tech-Shop</h2>
+            <p>Subscribe to our Email alerts to receive early discount offers,and new products info.</p>
+            <form>
+                <input type="text" placeholder="Email Address*"  class="input-field">
+            </form>
+            <form class="subscribe">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        <div class="bottom1">
+           <h3>Help</h3>
+           <p>FAQs<br>Track order<br>Cancel order<br>Return order<br>Warranty Info</p>
+        </div>
+        <div class="bottom2">
+            <h3>Policies</h3>
+            <p>Return Policy<br>Security<br>Sitemap<br>Privacy Policy<br>Terms & Conditions</p>
+         </div>
+         <div class="bottom3">
+            <h3>Company</h3>
+            <p>About Us<br>Contact Us<br>Service Centers<br>Careers<br>Affiliates</p>
+         </div>
+    </section>
+</footer>  
 
-    <div class="2nd-sec">
-        <h4>Help</h4><br><br>
-        <ul style="list-style: none; color: #595A63; text-align: left;" >
-            <li>FAQs</li><br>
-            <li>Track order</li><br>
-            <li>Cancel Order</li><br>
-            <li>Return order</li><br>
-            <li>Warranty info</li><br>
-        </ul>
-        </div>
-        <div class="3rd-sec">
-        <h4>Policies</h4><br><br>
-        <ul style="list-style: none; color: #595A63;text-align: left;">
-            <li>Return policy</li><br>
-            <li>Security</li><br>
-            <li>Sitemap</li><br>
-            <li>Privacy Policy</li><br>
-            <li>Terms and conditions</li><br>
-        </ul>
-        </div>
-        <div class="4th-sec">
-        <h4>Company</h4><br><br>
-        <ul style="list-style: none; color: #595A63;text-align: left;">
-            <li>About us</li><br>
-            <li>Contact us</li><br>
-            <li>Service centers</li><br>
-            <li>Carriers</li><br>
-            <li>Affliates</li><br>
-        </ul>
-    </div>
-    </div><br><br>
-    <hr>
-    <div class="copyright">
-        <p >2024|All rights reserved.Build by|Lakshmi Akshaya T</p>
-        <i class="fa-brands fa-facebook-f"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-linkedin-in"></i>
-    </div>
-</footer>
+
+<div class="end">
+
+<div class="last">
+  <p class="end1">2024 | All Rights Reserved.Built by | Bogavalli Babajan</p>
+</div>
+  <div class="social-icons">
+<div class="facebook">
+<a href=""></a>
+<i class="fa fa-facebook"  style="font-size:30px"></i>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
+</div>
+<div class="twitter">
+<i class="fa fa-twitter"  style="font-size:30px"></i>
+<a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" viewBox="0 0 16 16"></svg></a>
+
+<path d="M5.026 15c6.038 0 9.341-5.003 
+9.341-9.334 0-.14 0-.282-.006-.422A6.685 
+6.685 0 0 0 16 3.542a6.658 6.658 0 0 
+1-1.889.518 3.301 3.301 0 0 0 1.447-1.817
+6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 
+0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 
+3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 
+0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 
+2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 
+3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 
+2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 
+0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+</svg>
+</div>
+<div class="instagram">
+<a href=""></a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i class="fa fa-instagram"  style="font-size:30px"></i>
+</div>
+<div class="linkedin">
+<a href="" style="color: lightsteelblue;"><i class="fa fa-linkedin" style="font-size:30px"></i></a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</div>
+</div>
+</div>
+
+
+
 </html>
