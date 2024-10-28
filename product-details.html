@@ -62,12 +62,12 @@ header nav ul li a{
     gap: 10px;
     padding: 20px;
     justify-content: space-evenly;
-    background-color:#141414;
+    background-color:#1c1c1c;
 }
 .product-container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    background-color: #141414;
+    background-color: #1c1c1c;
     height: 800px;
 }
 .product-angles {
@@ -76,7 +76,8 @@ header nav ul li a{
 .product-angles img{
     width: 90px;
     height: 90px;
-    margin-top: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
     border:1px solid #595A63;
     margin-left: 10px;
 }
@@ -109,7 +110,7 @@ header nav ul li a{
     height: 500px;
     justify-content: space-evenly;
     color: #9EA8B6;
-    background-color: #141414;
+    background-color:#1c1c1c;
 }
 .specifications ul h5,h5:hover{
     background-color: red;
@@ -126,7 +127,7 @@ header nav ul li a{
 }
 .related-products{
     height: 700px;
-    background-color: #141414;
+    background-color:#1c1c1c;
 }
 .offers-discounts{
     display: flex;
@@ -143,13 +144,27 @@ header nav ul li a{
 }
 .box1,.box2,.box5,.box7{
     display: flex;
-    background-color: #141414;
+    background-color:#1c1c1c;
     padding: 0px;
     position: relative;
     left: 2px;
     justify-content: flex-start;
     align-items: center;
 
+}
+.our-advantages{
+    margin: 60px;
+}
+.delivery-logo{
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 60px;
+}
+.delivery-logo .Express,.delivery-logo .Brand,.delivery-logo .Deals,.delivery-logo .secure{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    line-height: 1.7;
 }
 .footer{
     margin-top: 20px;
@@ -220,6 +235,9 @@ header nav ul li a{
 margin-top: 25px;
 font-size: 14px;
 }
+.box-img1 i{
+    color: red;
+}
   
     </style>
 </head>
@@ -257,13 +275,13 @@ font-size: 14px;
             </header>
     <div class="product-container">
         <div class="product-angles">
-        <img src="jbl660nc-1.png" alt="" ><br>
-        <img src="jbl660nc-2.png" alt=""><br>
-        <img src="jbl660nc-3.png" alt=""><br>
-        <img src="jbl660nc-4.png" alt=""><br>
+        <img src="./Earpods/jbl660nc-1.png" alt="" ><br>
+        <img src="./Earpods/jbl660nc-2.png" alt=""><br>
+        <img src="./Earpods/jbl660nc-3.png" alt=""><br>
+        <img src="./Earpods/jbl660nc-4.png" alt=""><br>
     </div>
     <div class="product-image">
-        <img src="jbl660nc-1.png" alt="" style="width: 500px; height: 500px; margin-left: 10%;">
+        <img src="./Earpods/jbl660nc-1.png" alt="" style="width: 500px; height: 500px; margin-left: 10%;">
     </div>
     <div class="product-information">
         <h2>JBL LIVE 660NC</h2><br>
@@ -273,24 +291,24 @@ font-size: 14px;
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>
         <i class="fa-solid fa-star"></i>&nbsp;|&nbsp;1234 Ratings <br><br>
-        <hr><br><br>
-        <p style="font-size: large;">₹9,999 <s>₹14,999</s></p><br>
+        <hr width="100%" size="1">
+        <p style="font-size: large; margin-top: 10px;"><b style="font-size: 25px;">₹9,999</b> <s style="color: grey;">₹14,999</s></p><br>
         <p style="color: green;">You save: ₹5,000(33%)</p><br>
         <p style="color: grey;">(Inclusive of all taxes) </p>
         <button class="button-icon" style="margin-left: 55%; color: white; background-color: green; width: 80px; height: 30px;">  <i class="fa-solid fa-check" style="color: white;"></i> &nbsp;In stock</button>
-        <hr><br><br>
-        <h3>Offers and Discounts</h3>
+        <hr width="100%" size="1">
+        <h3 style="margin-top: 10px;">Offers and Discounts</h3>
         <div class="offers-discounts"><br>
         <p style="width: 180px; height: 60px; border: 1px solid #595A63; text-align: center; line-height: 60px;">No cost EMI on Credit Card</p><br>
         <p style="width: 180px; height: 60px; border: 1px solid #595A63; text-align: center; line-height: 60px;">Pay Later & Avail Cashback</p><br>
         </div>
-        <hr><br><br>
-        <button style="background-color: red; color: white; width: 200px; height: 50px;border-radius: 5px;font-size: large;">Add to cart</button>
+        <hr width="100%" size="1">
+        <button style="background-color: red; color: white; width: 200px; height: 50px;border-radius: 5px;font-size: large; margin-top: 20px;">Add to cart</button>
     
     </div>
     </div>
     <div class="specifications">
-    <ul style="margin-top: 70px; margin-left: 5px;">
+    <ul style="margin-top: 70px; opacity: 0.6;">
         <li>Brand</li><br><br>
         <li>Model</li><br><br>
         <li>Generic Name</li><br><br>
@@ -316,7 +334,7 @@ font-size: 14px;
 <div class="box-section" >
     <div class="box1">   
         <div class="box-img1">
-            <img src="jbl660nc-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
+            <img src="./Earpods/jbl660nc-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -324,14 +342,14 @@ font-size: 14px;
             <i class="fa-solid fa-star"></i><br><br>
             <h4 style="color:#9EA8B6 ;font-size: larger; ">JBL LIVE 660NC</h4><br>
             <p style="color: #595A63 ;font-size: large;">Wireless Over-ear NC &nbsp; headphones</p><br>
-            <hr><br>
-            <span style="font-size: larger; color: #9EA8B6;">₹9,999 &nbsp; &nbsp; <s style="color: #595A63;">₹14,999</s></span><br><br>
+            <hr width="100%" size="1">
+            <span style="font-size: larger; color: #9EA8B6;"> <b style="font-size: 20px;">₹9,999</b> &nbsp; &nbsp; <s style="color: #595A63;">₹14,999</s></span><br><br>
             <button style="color: white; width: 100%; height: 40px; background-color: red; font-size: 20px; border-radius: 5px; ">Add to cart</button>
         </div>
 </div>
     <div class="box2">
         <div class="box-img1">
-            <img src="boat518-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
+            <img src="./Earpods/boat518-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -339,14 +357,14 @@ font-size: 14px;
             <i class="fa-solid fa-star"></i><br><br>
             <h4 style="color:#9EA8B6 ;font-size: larger; ">boAt Rockerz 518</h4><br>
             <p style="color: #595A63 ;font-size: large;">On-Ear Wireless  headphones</p><br>
-            <hr><br>
-            <span style="font-size: larger; color: #9EA8B6;">₹1,299 &nbsp; &nbsp; <s style="color: #595A63;">₹3,990</s></span><br><br>
+            <hr width="100%" size="1">
+            <span style="font-size: larger; color: #9EA8B6;"><b style="font-size: 20px;">₹1,299</b> &nbsp; &nbsp; <s style="color: #595A63;">₹3,990</s></span><br><br>
             <button style="color: white; width: 100%; height: 40px; background-color: red; font-size: 20px; border-radius: 5px; ">Add to cart</button>
         </div>
     </div>
     <div class="box3">
         <div class="box-img1">
-            <img src="boat410-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
+            <img src="./Earpods/boat410-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -354,14 +372,14 @@ font-size: 14px;
             <i class="fa-solid fa-star"></i><br><br>
             <h4 style="color:#9EA8B6 ;font-size: larger; ">boAt Rockerz 410</h4><br>
             <p style="color: #595A63 ;font-size: large;">Bluetooth & Wired On-Ear &nbsp; headphones</p><br>
-            <hr><br>
-            <span style="font-size: larger; color: #9EA8B6;">₹1,599 &nbsp; &nbsp; <s style="color: #595A63;">₹2,990</s></span><br><br>
+            <hr width="100%" size="1">
+            <span style="font-size: larger; color: #9EA8B6;"><b style="font-size: 20px;">₹1,599</b> &nbsp; &nbsp; <s style="color: #595A63;">₹2,990</s></span><br><br>
             <button style="color: white; width: 100%; height: 40px; background-color: red; font-size: 20px; border-radius: 5px; ">Add to cart</button>
         </div>
     </div>
     <div class="box4">
         <div class="box-img1">
-            <img src="sonyXb910n-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
+            <img src="./Earpods/sonyXb910n-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
             <i class="fa-solid fa-star"></i>
@@ -369,13 +387,39 @@ font-size: 14px;
             <i class="fa-solid fa-star"></i><br><br>
             <h4 style="color:#9EA8B6 ;font-size: larger; ">Sony WH-XB910N</h4><br>
             <p style="color: #595A63 ;font-size: large;">Wireless Over-ear NC &nbsp; headphones</p><br>
-            <hr><br>
-            <span style="font-size: larger; color: #9EA8B6;">₹13,489 &nbsp; &nbsp; <s style="color: #595A63;">₹19,999</s></span><br><br>
+            <hr width="100%" size="1">
+            <span style="font-size: larger; color: #9EA8B6;"><b style="font-size: 20px;">₹13,489 </b>&nbsp; &nbsp; <s style="color: #595A63;">₹19,999</s></span><br><br>
             <button style="color: white; width: 100%; height: 40px; background-color: red; font-size: 20px; border-radius: 5px; ">Add to cart</button>
         </div>
     </div>
 </div>
 </div>
+<section>
+    <div class="our-advantages">
+        <h2 style="text-align: center;">Our Advantages</h2>
+    </div>
+   </section>
+   <section  class="delivery-logo">
+    <div class="Express">
+        <a href=""><i class='fas fa-shipping-fast' style='font-size:36px;color:red'></i></a>
+        <p><b>Express Delivery</b><br>Ships in 24 Hours</p>
+    </div>
+    <div class="Brand">
+        <a href=""><i class="fa-solid fa-shield-halved" style="font-size:36px;color:red"></i></a>
+        <p><b>Brand Warranty</b><br>100% original products</p>
+    
+    </div>
+    <div class="Deals">
+        <a href=""><i class="fa fa-tags" style="font-size:36px;color:red"></i></a>
+        <p><b>Exciting Deals</b><br>on all prepaid orders</p>
+    
+    </div>
+    <div class="secure">
+        <a href=""><i class="fas fa-credit-card" style="font-size:36px;color:red"></i></a>
+        <p><b>Secure payments</b><br>SSL/Secure certificate</p>
+    
+    </div>
+</section>
 <footer>
     <section class="bottom">
         <div class="bottom0">
@@ -444,7 +488,5 @@ font-size: 14px;
 </div>
 </div>
 </div>
-
-
-
+</body>
 </html>
