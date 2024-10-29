@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product-details-css-html</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        *{
+    margin: 1px;
+    padding: 1px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #1c1c1c;
+    color:lightsteelblue;
+}
+header{
+    display: flex;
+    /* background-color: black; */
+    background-color: #1c1c1c;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+header div h4{
+    flex: 1;
+    font-size: 24px;
+    color: #ffffff;
+}
+header nav{
+    flex: 1;
+}
+header nav ul{
+    display: flex;
+    justify-content: flex-end;    
+}
+header nav ul li{
+    list-style: none;
+    padding: 10px; 
+
+
+}
+header nav ul li a{
+    color: #ffffff;
+
+}
+  .box-img1{
+    padding: 10px;
+    color: white;
+    border: 1px solid grey;
+    width: 290px;
+    height: 480px;
+    
+}
+.box-section{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 20px;
+    justify-content: space-evenly;
+    background-color:#1c1c1c;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: #1c1c1c;
+    height: 800px;
+}
+.product-angles {
+    display: inline-block;
+}
+.product-angles img{
+    width: 90px;
+    height: 90px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border:1px solid #595A63;
+    margin-left: 10px;
+}
+.product-angles img:hover{
+    border:1px solid  white;
+}
+.product-image{
+    top: 5px;
+    position: relative;
+    right: 20%;
+}
+.product-information{
+    display: inline-block;
+    color: white;
+    position: relative;
+    top: 10px;
+    
+}
+.product-information i{
+    color: red;
+    font-size: smaller;
+}
+.product-information hr{
+    width: 500px;
+    font-size: smaller;
+}
+.specifications{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    height: 500px;
+    justify-content: space-evenly;
+    color: #9EA8B6;
+    background-color:#1c1c1c;
+}
+.specifications ul h5,h5:hover{
+    background-color: red;
+    width: 120px;
+    height: 30px;
+    color: white;
+}
+.specifications ul{
+    color: #9CAAC3;
+    font-size: large;
+}
+.specifications h5{
+    font-size: large;
+}
+.related-products{
+    height: 700px;
+    background-color:#1c1c1c;
+}
+.offers-discounts{
+    display: flex;
+    margin: 10px;
+}
+.offers-discounts p{
+    flex: 1;
+    margin: 10px;
+}
+.button-icon{
+    position: relative;
+    margin: 10px;
+    
+}
+.box1,.box2,.box5,.box7{
+    display: flex;
+    background-color:#1c1c1c;
+    padding: 0px;
+    position: relative;
+    left: 2px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+.our-advantages{
+    margin: 60px;
+}
+.delivery-logo{
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 60px;
+}
+.delivery-logo .Express,.delivery-logo .Brand,.delivery-logo .Deals,.delivery-logo .secure{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    line-height: 1.7;
+}
+.footer{
+    margin-top: 20px;
+}
+.bottom{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: black;
+    padding: 20px;
+}
+.bottom0 p{
+    opacity: 0.8;
+}
+.bottom0,.p,.input-field{
+    line-height: 1.5;
+}
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: white; 
+}
+
+.subscribe button{
+    background-color: #e60023;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    margin-right:80%;
+    font-size: 20px;
+}
+.bottom1{
+    margin-left: 90px;
+    line-height: 1cm;
+    
+}
+.bottom2{
+    margin-left: 90px;
+    line-height: 1cm;
+}
+.bottom3{
+    margin-left: 90px;
+    line-height: 1cm;
+}
+.bottom1 p,.bottom2 p,.bottom3 p{
+    opacity: 0.6;
+}
+/* footer ended*/
+.end{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
+    background-color: black;
+}
+.social-icons{
+    margin: 10px 70px 0px 30px;
+    display: flex;
+}
+.line{
+    opacity: 0.6;
+}
+.last{
+margin-top: 25px;
+font-size: 14px;
+}
+.box-img1 i{
+    color: red;
+}
+  
+    </style>
+</head>
+<body>
+    <header> 
+        <div>
+            <h4>Tech-Shop</h4>
+        </div>
+
+        <nav>
+            <ul>
+                <li class="icon">
+                    <a href="" class="ficon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="cart.html" class="sicon"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="icon">
+                    <a href="signup.html" class="ticon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            </nav>
+            </header>
+    <div class="product-container">
+        <div class="product-angles">
+        <img src="./Earpods/boat131-1.png" alt="" ><br>
+        <img src="./Earpods/boat131-2.png" alt=""><br>
+        <img src="./Earpods/boat131-3.png" alt=""><br>
+        <img src="./Earpods/boat131-4.png" alt=""><br>
+    </div>
+    <div class="product-image">
+        <img src="./Earpods/boat131-1.png" alt="" style="width: 500px; height: 500px; margin-left: 10%;">
+    </div>
+    <div class="product-information">
+        <h2>boAt Airdopes 131</h2><br>
+        <p>Wireless in-Ear Earbuds</p><br>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>&nbsp;|&nbsp;1234 Ratings <br><br>
+        <hr width="100%" size="1">
+        <p style="font-size: large; margin-top: 10px;"><b style="font-size: 25px;">₹1,099</b> <s style="color: grey;">₹2,999</s></p><br>
+        <p style="color: green;">You save: ₹5,000(33%)</p><br>
+        <p style="color: grey;">(Inclusive of all taxes) </p>
+        <button class="button-icon" style="margin-left: 55%; color: white; background-color: green; width: 80px; height: 30px;">  <i class="fa-solid fa-check" style="color: white;"></i> &nbsp;In stock</button>
+        <hr width="100%" size="1">
+        <h3 style="margin-top: 10px;">Offers and Discounts</h3>
+        <div class="offers-discounts"><br>
+        <p style="width: 180px; height: 60px; border: 1px solid #595A63; text-align: center; line-height: 60px;">No cost EMI on Credit Card</p><br>
+        <p style="width: 180px; height: 60px; border: 1px solid #595A63; text-align: center; line-height: 60px;">Pay Later & Avail Cashback</p><br>
+        </div>
+        <hr width="100%" size="1">
+        <button style="background-color: red; color: white; width: 200px; height: 50px;border-radius: 5px;font-size: large; margin-top: 20px;">Add to cart</button>
+    
+    </div>
+    </div>
+    <div class="specifications">
+    <ul style="margin-top: 70px; opacity: 0.6;">
+        <li>Brand</li><br><br>
+        <li>Model</li><br><br>
+        <li>Generic Name</li><br><br>
+        <li> Headphone Type</li><br><br>
+        <li>Connectivity</li><br><br>
+        <li>Microphone</li><br><br>
+    </ul>
+    
+    <ul style="list-style: none; text-align: end; margin-right: 52%;">
+        <h5 style="color: #595A63;" >Specifications</h5><br><br>
+        <li>JBL</li><br><br>
+        <li>JBL Live 660NC</li><br><br>
+        <li>Headphones</li><br><br>
+        <li>Over Ear</li><br><br>
+        <li>Wireless</li><br><br>
+        <li>Yes</li><br><br>
+    </ul>
+    <h5>Overview</h5>
+    <h5>Reviews</h5>
+</div>
+<div class="related-products">
+<h3 style="text-align: center; color: #9EA8B6;">Related Products</h3>
+<div class="box-section" >
+    <div class="box1">   
+        <div class="box-img1">
+            <img src="./Earpods/jbl660nc-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <h4 style="color:#9EA8B6 ;font-size: larger; ">JBL LIVE 660NC</h4><br>
+            <p style="color: #595A63 ;font-size: large;">Wireless Over-ear NC &nbsp; headphones</p><br>
+            <hr width="100%" size="1">
+            <span style="font-size: larger; color: #9EA8B6;"> <b style="font-size: 20px;">₹9,999</b> &nbsp; &nbsp; <s style="color: #595A63;">₹14,999</s></span><br><br>
+            <button style="color: white; width: 100%; height: 40px; background-color: red; font-size: 20px; border-radius: 5px; ">Add to cart</button>
+        </div>
+</div>
+    <div class="box2">
+        <div class="box-img1">
+            <img src="./Earpods/boat518-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <h4 style="color:#9EA8B6 ;font-size: larger; ">boAt Rockerz 518</h4><br>
+            <p style="color: #595A63 ;font-size: large;">On-Ear Wireless  headphones</p><br>
+            <hr width="100%" size="1">
+            <span style="font-size: larger; color: #9EA8B6;"><b style="font-size: 20px;">₹1,299</b> &nbsp; &nbsp; <s style="color: #595A63;">₹3,990</s></span><br><br>
+            <button style="color: white; width: 100%; height: 40px; background-color: red; font-size: 20px; border-radius: 5px; ">Add to cart</button>
+        </div>
+    </div>
+    <div class="box3">
+        <div class="box-img1">
+            <img src="./Earpods/boat410-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <h4 style="color:#9EA8B6 ;font-size: larger; ">boAt Rockerz 410</h4><br>
+            <p style="color: #595A63 ;font-size: large;">Bluetooth & Wired On-Ear &nbsp; headphones</p><br>
+            <hr width="100%" size="1">
+            <span style="font-size: larger; color: #9EA8B6;"><b style="font-size: 20px;">₹1,599</b> &nbsp; &nbsp; <s style="color: #595A63;">₹2,990</s></span><br><br>
+            <button style="color: white; width: 100%; height: 40px; background-color: red; font-size: 20px; border-radius: 5px; ">Add to cart</button>
+        </div>
+    </div>
+    <div class="box4">
+        <div class="box-img1">
+            <img src="./Earpods/sonyXb910n-1.png" alt="" style="width: 200px; height: 180px; " ><br><br>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><br><br>
+            <h4 style="color:#9EA8B6 ;font-size: larger; ">Sony WH-XB910N</h4><br>
+            <p style="color: #595A63 ;font-size: large;">Wireless Over-ear NC &nbsp; headphones</p><br>
+            <hr width="100%" size="1">
+            <span style="font-size: larger; color: #9EA8B6;"><b style="font-size: 20px;">₹13,489 </b>&nbsp; &nbsp; <s style="color: #595A63;">₹19,999</s></span><br><br>
+            <button style="color: white; width: 100%; height: 40px; background-color: red; font-size: 20px; border-radius: 5px; ">Add to cart</button>
+        </div>
+    </div>
+</div>
+</div>
+<section>
+    <div class="our-advantages">
+        <h2 style="text-align: center;">Our Advantages</h2>
+    </div>
+   </section>
+   <section  class="delivery-logo">
+    <div class="Express">
+        <a href=""><i class='fas fa-shipping-fast' style='font-size:36px;color:red'></i></a>
+        <p><b>Express Delivery</b><br>Ships in 24 Hours</p>
+    </div>
+    <div class="Brand">
+        <a href=""><i class="fa-solid fa-shield-halved" style="font-size:36px;color:red"></i></a>
+        <p><b>Brand Warranty</b><br>100% original products</p>
+    
+    </div>
+    <div class="Deals">
+        <a href=""><i class="fa fa-tags" style="font-size:36px;color:red"></i></a>
+        <p><b>Exciting Deals</b><br>on all prepaid orders</p>
+    
+    </div>
+    <div class="secure">
+        <a href=""><i class="fas fa-credit-card" style="font-size:36px;color:red"></i></a>
+        <p><b>Secure payments</b><br>SSL/Secure certificate</p>
+    
+    </div>
+</section>
+<footer>
+    <section class="bottom">
+        <div class="bottom0">
+            <h2>Tech-Shop</h2>
+            <p>Subscribe to our Email alerts to receive early discount offers,and new products info.</p>
+            <form>
+                <input type="text" placeholder="Email Address*"  class="input-field">
+            </form>
+            <form class="subscribe">
+                <button>Subscribe</button>
+            </form>
+        </div>
+        <div class="bottom1">
+           <h3>Help</h3>
+           <p>FAQs<br>Track order<br>Cancel order<br>Return order<br>Warranty Info</p>
+        </div>
+        <div class="bottom2">
+            <h3>Policies</h3>
+            <p>Return Policy<br>Security<br>Sitemap<br>Privacy Policy<br>Terms & Conditions</p>
+         </div>
+         <div class="bottom3">
+            <h3>Company</h3>
+            <p>About Us<br>Contact Us<br>Service Centers<br>Careers<br>Affiliates</p>
+         </div>
+    </section>
+</footer>  
+
+
+<div class="end">
+
+<div class="last">
+  <p class="end1">2024 | All Rights Reserved.Built by | Bogavalli Babajan</p>
+</div>
+  <div class="social-icons">
+<div class="facebook">
+<a href=""></a>
+<i class="fa fa-facebook"  style="font-size:30px"></i>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
+</div>
+<div class="twitter">
+<i class="fa fa-twitter"  style="font-size:30px"></i>
+<a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" viewBox="0 0 16 16"></svg></a>
+
+<path d="M5.026 15c6.038 0 9.341-5.003 
+9.341-9.334 0-.14 0-.282-.006-.422A6.685 
+6.685 0 0 0 16 3.542a6.658 6.658 0 0 
+1-1.889.518 3.301 3.301 0 0 0 1.447-1.817
+6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 
+0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 
+3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 
+0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 
+2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 
+3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 
+2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 
+0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+</svg>
+</div>
+<div class="instagram">
+<a href=""></a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<i class="fa fa-instagram"  style="font-size:30px"></i>
+</div>
+<div class="linkedin">
+<a href="" style="color: lightsteelblue;"><i class="fa fa-linkedin" style="font-size:30px"></i></a>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</div>
+</div>
+</div>
+</body>
+</html>

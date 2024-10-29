@@ -38,6 +38,38 @@ header nav ul li a{
     color: #ffffff;
 
 }
+.register{
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 0px 5px;
+    color: gray;
+    text-decoration: none;
+    font-size: small;
+}
+.user{
+    padding: 15px 20px;
+    margin: 0px 20px;
+    width: 280px;
+    height: 200px;
+    border: whitesmoke;
+    border: 1px solid rgb(90, 86, 86);
+    display: none;
+    background-color: 
+    #181A1C;
+    align-items: center;
+    justify-content: flex-start; 
+    position: absolute;
+    right: 10%;
+    font-size: smaller;
+}
+.ticon:hover .user{
+    display: block; 
+}
+.ticon {
+    position: relative;
+    display: inline-block;
+}
+
 /* boat image start*/
 .middle{
     display: flex;
@@ -71,7 +103,7 @@ header nav ul li a{
     margin-top: 20px;
     margin: 40px;
     width: 40%;
-    margin-right:100%;
+    margin-left:0%;
 }
    /* boat image ended*/
    /* featured products start*/
@@ -336,7 +368,7 @@ header nav ul li a{
     background-color: black;
 }
 .social-icons{
-    margin: 10px 70px 0px 30px;
+    margin: 10px 70px 34px 30px;
     display: flex;
 }
 .line{
