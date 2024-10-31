@@ -38,11 +38,11 @@ header nav ul li a{
     color: #ffffff;
 
 }
-.register{
-    border: 1px solid gray;
+.signup{
+    border: 1px solid grey;
     padding: 10px;
     margin: 0px 5px;
-    color: gray;
+    color: grey;
     text-decoration: none;
     font-size: small;
 }
@@ -50,16 +50,15 @@ header nav ul li a{
     padding: 15px 20px;
     margin: 0px 20px;
     width: 280px;
-    height: 200px;
+    height: 180px;
     border: whitesmoke;
     border: 1px solid rgb(90, 86, 86);
     display: none;
-    background-color: 
-    #181A1C;
+    background-color:  #181A1C;
     align-items: center;
     justify-content: flex-start; 
     position: absolute;
-    right: 10%;
+    right: 0%;
     font-size: smaller;
 }
 .ticon:hover .user{
@@ -71,40 +70,41 @@ header nav ul li a{
 }
 
 /* boat image start*/
-.middle{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 286px;
-    padding-top: 90px;
-    background-color: #1c1c1c;
-}
-.middle-text h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-    
-}
-.middle-text .price {
-    font-size: 25px;
-    color: white;
-}
-.middle-text .price span {
-    text-decoration: line-through;
-    font-size: 16px;
-    color: #888888;
-}
-.middle-text .b {
-    background-color: #e60023;
-    border-radius: 3px;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    margin: 40px;
-    width: 40%;
-    margin-left:0%;
-}
+    .middle{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 286px;
+        padding-top: 90px;
+        background-color: #1c1c1c;
+    }
+    .middle-text h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        
+    }
+    .middle-text .price {
+        font-size: 25px;
+        color: white;
+    }
+    .middle-text .price span {
+        text-decoration: line-through;
+        font-size: 16px;
+        color: #888888;
+    }
+    .middle-text .b {
+        background-color: #e60023;
+        border-radius: 3px;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+        margin: 40px;
+        width: 40%;
+        margin-left:0%;
+    }
+
    /* boat image ended*/
    /* featured products start*/
 .featured-products {
@@ -378,4 +378,4 @@ header nav ul li a{
 margin-top: 25px;
 font-size: 14px;
 }
-  
+

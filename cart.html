@@ -95,7 +95,7 @@ header nav ul li a{
     grid-template-columns: repeat(2,1fr);
     width: 20%;
     height: 20%;
-    background-color:#1c1c1c;
+    background-color:#1c1c1c00;
     line-height: 1;
 }
 .order-summary{
@@ -158,9 +158,6 @@ header nav ul li a{
             outline: none;
 }
 /* footer start*/
-.footer{
-    margin-top: 20px;
-}
 .bottom{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -181,6 +178,7 @@ header nav ul li a{
     background-color: transparent;
     color: white; 
 }
+
 .subscribe button{
     background-color: #e60023;
     border-radius: 3px;
@@ -210,22 +208,23 @@ header nav ul li a{
 }
 /* footer ended*/
 .end{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px 0px 0px;
     background-color: black;
 }
 .social-icons{
+    margin: 10px 70px 34px 30px;
     display: flex;
-    justify-content:right;
-    padding: 10px 20px;
 }
 .line{
     opacity: 0.6;
 }
 .last{
-padding-top: 40px;
+margin-top: 25px;
+font-size: 14px;
 }
-.deleteicon{
-    
-}
+
         </style>
     </head>
     <body>
@@ -365,7 +364,7 @@ padding-top: 40px;
 
         <p style="color:  lightsteelblue">Delivery &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<span class="sp3" style="color: green;"> Free </span></p><br><br>
         <hr width="80%" size="1">
-        <h4 style="color: lightsteelblue" margin-top font-size: 25px;>Total Price &nbsp;&nbsp;&nbsp;&nbsp;<span class="sp4" style="text-align: end;">₹12,846</span> </h4><br><br>
+        <h4 style="color: lightsteelblue;margin-top: 20px; font-size: 20px; ">Total Price &nbsp;&nbsp;&nbsp;&nbsp;<span class="sp4" style="text-align: end;">₹12,846</span> </h4><br><br>
         <button style="width: 250px;height: 40px;color: white; background-color: red;font-size: large;">Checkout</button>
 
     </div>
@@ -397,21 +396,20 @@ padding-top: 40px;
         </section>
   </footer>  
 
-<footer>
-    <section class="end">
-        <hr class="line" width="100%" size="1">
+
+<div class="end">
   <div class="last">
-      <p>2024 | All Rights Reserved.Built by | Bogavalli Babajan</p>
+      <p class="end1">2024 | All Rights Reserved.Built by | Bogavalli Babajan</p>
     </div>
       <div class="social-icons">
   <div class="facebook">
     <a href=""></a>
+    <i class="fa fa-facebook"  style="font-size:30px"></i>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/> 
-  <i class="fa fa-facebook"  style="font-size:30px"></i>
- </div>
+  </div>
   <div class="twitter">
-    <i class="fa fa-twitter"  style="font-size:30px"></i>
-   <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" viewBox="0 0 16 16"></svg>
+    <i class="fa fa-twitter"  style="font-size:30px ;margin-left: 20px;"></i>
+   <a href=""> <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="currentColor" viewBox="0 0 16 16"></svg></a>
 
     <path d="M5.026 15c6.038 0 9.341-5.003 
     9.341-9.334 0-.14 0-.282-.006-.422A6.685 
@@ -430,14 +428,13 @@ padding-top: 40px;
   <div class="instagram">
   <a href=""></a>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <i class="fa fa-instagram"  style="font-size:30px"></i>
+  <i class="fa fa-instagram"  style="font-size:30px ; margin-right: 20px;"></i>
   </div>
   <div class="linkedin">
   <a href="" style="color: lightsteelblue;"><i class="fa fa-linkedin" style="font-size:30px"></i></a>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </div>
 </div>
-</section>
-</footer>
-    </body>
+</div>
+</body>
 </html>
